@@ -103,35 +103,34 @@
 // Если ввели min, программа выводит минимальное из трех введенных чисел.
 
 
-// let a = process.argv[2];
-// let b = process.argv[3];
-// let c = process.argv[4];
-// let m = process.argv[5];
-// let d;
-// if (m == `max`) {
-//   if (a > b) {
-//     d = a;
-//   } else {
-//     d = b;
-//   }
-//   if (d > c) {
-//     console.log(d);
-//   } else {
-//     console.log(c);
-//   }
-// }
-// else if (m == `min`) {
-//   if (a > b) {
-//     d = b;
-//   } else {
-//     d = a;
-//   }
-//   if (d > c) {
-//     console.log(c);
-//   } else {
-//     console.log(d);
-//   }
-// }
+let a = +process.argv[2];
+let b = +process.argv[3];
+let c = +process.argv[4];
+let m = process.argv[5];
+let d;
+if (m == `max`) {
+    if (a > b) {
+        d = a;
+    } else {
+        d = b;
+    }
+    if (d > c) {
+        console.log(d);
+    } else {
+        console.log(c);
+    }
+} else if (m == `min`) {
+    if (a > b) {
+        d = b;
+    } else {
+        d = a;
+    }
+    if (d > c) {
+        console.log(c);
+    } else {
+        console.log(d);
+    }
+}
 
 // Task 08
 // Составить алгоритм увеличения всех трех, введённых переменных на 5,
