@@ -1,3 +1,9 @@
+/**
+ * Тема: 
+ *  1. Знакомство с переменными
+ *  2. Вывод данных
+ */
+
 console.log('Привет');
 
 let myNumber = 10.7;
@@ -35,4 +41,4 @@ let w = 1 + 2 * 3;
 console.log(w);
 let a = 10;
 a += 5;
-console.log(a=='15');
+console.log(a == '15');

@@ -1,3 +1,9 @@
+/**
+ * Тема: 
+ *  1. Конструкция if
+ *  2. Ввод данных
+ */
+
 // //let w = 11;
 // let f = w % 2;
 // console.log(f);
@@ -47,9 +53,8 @@
 let f = process.argv[2];
 let d = process.argv[3];
 console.log(f, d);
-if (f > d){
+if (f > d) {
     console.log(`+`);
-}
-else {
+} else {
     console.log(`-`);
 }
