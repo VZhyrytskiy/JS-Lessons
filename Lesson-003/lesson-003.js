@@ -18,3 +18,14 @@
 //  ||   True  False
 // True  True  True
 // False True  False
+
+console.log(y);
+let x = 1 + 1;
+console.log(y); 
+{
+    var y = x * 3;
+    console.log(y);
+}
+console.log(y);
+var sum = x + x * 2;
+console.log(sum);
