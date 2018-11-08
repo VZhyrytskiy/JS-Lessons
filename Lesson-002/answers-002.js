@@ -103,39 +103,51 @@
 // Если ввели min, программа выводит минимальное из трех введенных чисел.
 
 
-let a = +process.argv[2];
-let b = +process.argv[3];
-let c = +process.argv[4];
-let m = process.argv[5];
-let d;
-if (m == `max`) {
-    if (a > b) {
-        d = a;
-    } else {
-        d = b;
-    }
-    if (d > c) {
-        console.log(d);
-    } else {
-        console.log(c);
-    }
-} else if (m == `min`) {
-    if (a > b) {
-        d = b;
-    } else {
-        d = a;
-    }
-    if (d > c) {
-        console.log(c);
-    } else {
-        console.log(d);
-    }
-}
+// let a = +process.argv[2];
+// let b = +process.argv[3];
+// let c = +process.argv[4];
+// let m = process.argv[5];
+// let d;
+// if (m == `max`) {
+//     if (a > b) {
+//         d = a;
+//     } else {
+//         d = b;
+//     }
+//     if (d > c) {
+//         console.log(d);
+//     } else {
+//         console.log(c);
+//     }
+// } else if (m == `min`) {
+//     if (a > b) {
+//         d = b;
+//     } else {
+//         d = a;
+//     }
+//     if (d > c) {
+//         console.log(c);
+//     } else {
+//         console.log(d);
+//     }
+// }
 
 // Task 08
 // Составить алгоритм увеличения всех трех, введённых переменных на 5,
 // если среди них есть хотя бы две равные.
 // В противном случае выдать ответ «равных нет».
+
+// let a = +process.argv[2] ;
+// let b = +process.argv[3] ;
+// let c = +process.argv[4] ; 
+// if ((a === b) || (b === c) || (a ===c)){
+// console.log(a + 5);
+// console.log(b + 5);
+// console.log(c + 5);   
+// }                                         
+// else {
+//     console.log(`Нет равных`);
+// }
 
 // Task 09
 // Вводиться два числа с разной четностью. Вывести нечетное число.
@@ -177,3 +189,18 @@ if (m == `max`) {
 // В первую четверть попадают точки, у которых обе координаты (x и y) больше нуля.
 // Во вторую: x < 0, y > 0; третью: x < 0, y < 0; четвертую: x > 0, y < 0.
 // Написать программу, определяющую по координатам точки, в какой четверти она находится.
+
+// let x = +process.argv[2];
+// let y = +process.argv[3];
+// if ((x > 0) && (y > 0)){
+//     console.log(`I координатная четверть`)
+// }
+// else if ((x < 0) && (y > 0)){
+//     console.log(`II координатная четверть`)    
+// }                                                        
+// else if ((x < 0) && (y < 0)){
+//     console.log(`III координатная четверть`)    
+// }
+// else if ((x > 0) && (y < 0)){
+//     console.log(`IV координатная четверть`)    
+// }

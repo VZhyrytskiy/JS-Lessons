@@ -70,6 +70,16 @@
 // Ввести 3 числа. Проверить можно ли построить из этих чисел треугольник.
 // Если можно, вывести "Да", иначе "Нет".
 
+// let a = +process.argv[2];
+// let b = +process.argv[3];                
+// let c = +process.argv[4];
+// if ((a < b + c) && (b < a + c) && (c < a + b)){
+//     console.log(`Можно построить`);
+// }
+// else {
+//     console.log(`Нельзя построить`);    
+// }
+
 // Task 06
 // В первом подъезде квартиры с 1 по 20. 
 // Во втором с 21 по 48. 
@@ -142,13 +152,32 @@
 
 // Task 09
 // Даны три числа. Найти среднее из них (то есть число, расположенное между наименьшим и наибольшим).
-let a = +process.argv[2];
-let b = +process.argv[3];
-let c = +process.argv[4];
-let d ;
-if ((a > b) && (b > c)) {
-    d = b;
-}
+// let a = +process.argv[2];
+// let b = +process.argv[3];
+// let c = +process.argv[4];
+// let d ;
+// if ((a > b) && (b > c)) {
+//     d = b;
+// }
 
 // Task 10
 // Даны три числа. Найти сумму двух наибольших из них.
+
+// let a = +process.argv[2];
+// let b = +process.argv[3];
+// let c = +process.argv[4];
+// let d = a + b + c;
+// let f;
+// if (a < b) {
+//     f = a;
+// }
+// else {
+//     f = b;      
+// }                      
+// if (f < c ) {
+//     f = f;
+// }
+// else {
+//     f = c;
+// }
+// console.log(d - f);
