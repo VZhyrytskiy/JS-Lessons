@@ -2,7 +2,7 @@
 // Пользователь вводит строку из пяти или больше символов. 
 // Вывести в консоль первый и третий символы строки
 
-// const a = '!@#$%';
+// const a = process.argv[2];
 // console.log(a[0]);
 // console.log(a[2]);
 
@@ -20,7 +20,7 @@
 // Дана строка, состоящая из символов, например, 'abcde'. 
 // Проверьте, что первым символом этой строки является буква 'a'. Если это так - выведите 'да', в противном случае выведите 'нет'
 
-// const string = 'abcde';
+// const string = process.argv[2];
 // if (string[0] === `a`){
 //     console.log(`Yes`);
 // }                                    
@@ -38,7 +38,7 @@
 // Пользователь вводит строку. Проверить содержит ли она строку 'aaa'.
 // Если содержит, то вывести true, иначе false.
 
-// const s = 'это строкaaa';
+// const s = process.argv[2];
 // if (s.includes('aaa')){
 //     console.log(`True`);
 // }
@@ -88,7 +88,7 @@
 //     console.log( '2,3' );
 //   }
 
-// const a = 2;
+// const a = process.argv[2];
 // switch (a) {
 //     case 0: 
 //     console.log( 0 );
@@ -98,7 +98,8 @@
 //     console.log( 1 );            //Task 07 lesson-007
 //     break;
 
-//     case 2,3:
+//     case 2:
+//     case 3:
 //     console.log( '2,3' );
 //     break;
 
@@ -113,32 +114,53 @@
 // если значение 2 – 'весна' и так далее. 
 // Вывести result
 
-const seasons = process.argv[2];
-let result;
-switch (seasons) {
-    case 1:
-    result = 1 
-    console.log(`Winter`);
-    break;
+// const seasons = +process.argv[2];
+// let result;
+// switch (seasons) {
+//     case 1:
+//     result = `Winter`; 
 
-    case 2:
-    console.log(`Spring`);            
-    break;
+//     break;
 
-    case 3:
-    console.log('Summer');
-    break;
+//     case 2:
+//     result = `Spring`;            
+//     break;
 
-    case 4:
-    console.log('Autumn');
-    break;
-}
+//     case 3:
+//     result = `Summer` ;
+//     break;
+
+//     case 4:
+//     result = `Autumn`; 
+//     break;
+
+// }
+// console.log(result);
 
 // Задание 9.
 // В переменной day лежит какое-то число из интервала от 1 до 31. 
 // Определите в какую декаду месяца попадает это число (в первую, вторую, третью или четвертую).
 
-// Задание 10.
+// let day = +process.argv[2];
+// let ndecade;
+// if ((day>=1) && (day<=10)){
+//     ndecade = 1;
+//     // console.log(`1 декада`);
+// }
+// else if ((day>=11) && (day<=20)){
+//     ndecade = 2;
+//     // console.log(`2 декада`);
+// }
+// else if ((day>=21) && (day<=30)){
+//     ndecade = 3;
+//     // console.log(`3 декада`);
+// }
+// else {
+//     ndecade = 4;
+//     // console.log(`4 декада`);
+// }
+// console.log( `${ndecade} Decade`);
+// // Задание 10.
 // В переменной month лежит какое-то число из интервала от 1 до 12. 
 // Определите в какое время года попадает этот месяц (зима, лето, весна, осень).
 
@@ -146,11 +168,30 @@ switch (seasons) {
 // Пользователь вводит строку с цифрами. Например, '12345'. 
 // Проверьте, что первым символом этой строки является цифра 1, 2 или 3. 
 // Если это так - выведите 'да', в противном случае выведите 'нет'.
-
+// let s = process.argv[2];
+// if (s.startsWith(`1`) || s.startsWith(`2`) || s.startsWith(`3`)){
+//     console.log(`Yes`);
+// }
+// else{
+//     console.log(`No`);
+// }
 // Задание 12.
 // Пользователь вводит строку из 3-х цифр. 
 // Найдите сумму этих цифр. То есть сложите как числа первый символ строки, второй и третий.
 
+// let s = process.argv[2];
+// let result;
+//  result = +s[0] + +s[1] + +s[2];
+//  console.log(result);
+
+// let s = process.argv[2];
+// let sum = 0;
+// let i = 0;
+// while (i < s.length) {
+//     sum = sum + +s[i];
+//     i = i + 1;
+// }
+// console.log(sum);
 // Задание 13.
 // Пользователь вводит строку из 6-ти цифр. 
 // Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр. 
@@ -162,5 +203,12 @@ switch (seasons) {
 // Задание 15.
 // Выведите четные числа из диапазона от 0 до 100.
 
+// let i = 0;
+// while (i <= 100) {
+//     if (i % 2 === 0) {
+//         console.log(i);
+//     }
+//     i += 1;
+// }
 // Задание 16.
 // С помощью цикла найдите сумму чисел от 1 до 100.
