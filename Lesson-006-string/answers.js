@@ -188,30 +188,30 @@
 // }
 // console.log(s1)
 
-let s = process.argv[2];
-let i = 0;
-let s1 = ``;
-let s2 = ``;
-let s3 = ``;
-while (i < s.length) {
+// let s = process.argv[2];
+// let i = 0;
+// let s1 = ``;
+// let s2 = ``;
+// let s3 = ``;
+// while (i < s.length) {
     
-if (i % 3 === 0){
-    s1 = s1 + s[i];
-}
-else if (i % 3 === 1){
-    s2 = s2 + s[i];
-}
-else if (i % 3 === 2){
-    s3 = s3 + s[i];
-}
+// if (i % 3 === 0){
+//     s1 = s1 + s[i];
+// }
+// else if (i % 3 === 1){
+//     s2 = s2 + s[i];
+// }
+// else if (i % 3 === 2){
+//     s3 = s3 + s[i];
+// }
    
    
-    i++;
+//     i++;
 
-}
-console.log(s1);
-console.log(s2);
-console.log(s3);
+// }
+// console.log(s1);
+// console.log(s2);
+// console.log(s3);
 // Задание 7. (+)
 // Пользователь вводит строку, в которой повторяются подряд символы. Создать новую строку,
 // где символы не повторяются.
@@ -220,57 +220,83 @@ console.log(s3);
 // let string = process.argv[2];
 // let unique ='';
 // let i = 0
-// while ((i<string.length) && (unique.indexOf(string[i])==-1)){
+// while (i<string.length) {
+//     if (unique.indexOf(string[i])==-1){
 //     unique += string[i];
+//     }
 //    i = i + 1;   
 // }
-// console.log(string);
+// console.log(unique);
 
-// Задание 8. (-)
+// Задание 8. (+)
 // Пользователь вводит строку и символ. Подсчитать количество таких символов в введенной строке.
 
 // let st1 = process.argv[2];
 // let st2 = process.argv[3];
-
+// let count = 0;
 // let i = 0;
-// while (i < string.length){
-//     while (st1.indexOf(string[i]) > -1) {
-//         st1 = st1.replace(string[i], '*');
+// while (i < st1.length){
+//     if (st1[i] === st2 ){
+//         count++;
+    
 //     }
+
 //     i = i + 1;
 // }
-// console.log(st1);
+// console.log(count);
 
 // Задание 9. 
 // Пользователь вводит строку. Вывести перевернутую строку.
 // Например s = 'abc' => 'cba'
 
-// Задание 10. (-)
+// Задание 10. (+)
 // Пользователь вводит строку в которой есть символ *. Заменить символ * на ---.
 
 // let st1 = process.argv[2];
 // let string = `*`;
 
-// let i = 0;
-// while (i < string.length){
-//     while (st1.indexOf(string[i]) > -1) {
-//         st1 = st1.replace(string[i], '---');
+//     while (st1.indexOf(string) > -1) {
+//         st1 = st1.replace(string, '---');
 //     }
-//     i = i + 1;
-// }
 // console.log(st1);
 
-// Задание 11. (-)
+// Задание 11. (+)
 // Пользователь вводит строку в которой есть символ *. Удалить этот символ из строки.
 
 // let st1 = process.argv[2];
-// let string = `*`;
+// let s = `*`;
 
-// let i = 0;
-// while (i < string.length){
-//     while (st1.indexOf(string[i]) > -1) {
-//         st1 = st1.replace(string[i], '');
-//     }
-//     i = i + 1;
+// while (st1.indexOf(s) > -1) {
+//     st1 = st1.replace(s, '');
 // }
 // console.log(st1);
+
+// let s = process.argv[2];
+// let sum = 0;
+// let i = 0;
+// while (i < s.length-1){
+//     if ((s[i] == `a`) && (s[i+1] == `*`)){
+//         sum++;
+//     }
+
+//     i++;
+// }
+// console.log(sum);
+
+// const a = [1, 2, 3];
+// let i = 0;
+// let sum = 0;
+// while (i   < a.length ){
+//     sum = sum + a[i];
+//     // a[i]++;
+//     i++;
+// }
+// // console.log(a);
+// console.log(sum);
+
+let s1 = process.argv[2];
+let a = s1.split(``);
+let s2 = a.join(``);
+console.log(a);
+console.log(s1);
+console.log(s2);
