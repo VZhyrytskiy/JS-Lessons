@@ -3,6 +3,7 @@
  * https://developer.mozilla.org/uk/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
  * 
  * .filter(), .forEach()
+ * Посмотреть метод find, findIndex
  */
 
 // const a = [`asd`, `adkjadhk`, `as`];
